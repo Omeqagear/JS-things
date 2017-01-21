@@ -1,0 +1,31 @@
+.no-float{
+    float: none;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.make_space{
+    margin-right: 1em;
+}
+
+.up-space{
+    margin-top: 200px;
+}
+
+body{
+	background: red;
+}
+
+.retraso-1{
+    animation-delay: 1s;
+}
+
+.retraso-2{
+    animation-delay: 2s;
+}
+.retraso-3{
+    animation-delay: 3s;
+}
+

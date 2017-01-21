@@ -1,0 +1,22 @@
+extends ./layout.pug
+block contenido
+
+    div(class="up-space no-padding container center-block col s6 ")
+        form(action="/users" method="POST" class="col s6")
+            div.input-field
+                label(for="email") Email
+                input(type="text" name="email" placeholder="Email" id="email" class="validate")
+            div.input-field
+                label(for="password") Contraseña
+                input(type="password" name="password" id="password" class="validate")
+            div.input-field
+                label(for="password") Confirma tu contraseña
+                input(type="password" name="password_confirmation" id="password" class="validate")
+            div.input-field
+                label(for="username") Nombre de usuario
+                input(type="text" name="username" id="username" class="validate")
+            div(class="col s12 m6 ")
+            button(class="btn waves-effect waves-light" type="submit" name="action") Iniciar Sesion
+
+            div.row
+                a(href="/singup" class="col s12 m6 text-right ") Ya tengo una cuenta

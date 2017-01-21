@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    title Una pagina hecha con pug (antes Jade)
+body
+ h1!= hola
+
+
+- var arreglo = [1,2,3,4,5,6];
+
+- for(var i = arreglo.length -1; i >= 0; i--)
+    p Hola #{arreglo[i]}
+
+article
+    h2 Esto es un articulo
+    p. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit nostrum ipsa sit, eum perspiciatis recusandae sequi voluptatem delectus dolorem commodi aliquam nemo esse harum, numquam aperiam, ad repudiandae. Obcaecati.
+    
+each item in arreglo
+    
+    case item
+        when 1
+            p el item era 1
+        when 2
+            p el item era 2
+        when 3 
+            p el item era 3

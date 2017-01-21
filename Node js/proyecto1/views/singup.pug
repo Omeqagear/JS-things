@@ -1,0 +1,15 @@
+extends ./layout.pug
+block contenido
+
+	div(class="container center-alingn up_space")
+		form(action="/sessions" method="POST" class="col s4 center-block")
+			div.input-field
+
+				input(type="text" name="email" placeholder="Email" id="email" class="validate")
+			div.input-field
+
+				input(type="password" name="password" id="password" placeholder="Contraseña" class="validate")
+			div(class="col s12 m6")
+				button(class="btn waves-effect waves-light" type="submit" name="action") Iniciar sessions
+			div.row
+				a(href="/login" class="col s12 m6 right-aling") No tengo cuenta
